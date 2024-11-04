@@ -3,6 +3,7 @@ import axios from 'axios';
 import {CategorySelector} from '../../components/CategorySelector';
 import {ProductCard} from '../../components/ProductCard';
 import { Container, SearchInput, ProductsContainer } from './style';
+import { fetchProducts } from '../../servicesAPI';
 
 export const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
@@ -19,10 +20,17 @@ export const Home = () => {
     setSearchTerm(event.target.value);
   };
 
+  const loadAPI = async () => {
+    const response = await fetchProducts()
+      if (response.status === 200) {
+        setProducts(response.data)
+      }else {
+        console.error('Erro ao buscar produtos', response);
+      }
+  }
+
   useEffect(() => {
-    axios.get('/api/products')
-      .then(response => setProducts(response.data))
-      .catch(error => console.error(error));
+    loadAPI()
   }, []);
 
    const filteredProducts = products.filter(product =>
