@@ -1,21 +1,30 @@
 import { Historico } from "./pages/historicoCompras"
 import { Sobre } from "./pages/Sobre"
+import { CartProvider } from './context/CartContext';
 import React from 'react';
 import { Cadastro } from './pages/cadastro';
+import { ProductDetails } from './pages/ProductDetails';
 import { Login } from './pages/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {Home} from './pages/home';
+import { Cart } from './pages/Cart';
+import { NotFound } from "./pages/NotFound";
 
 export const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/login" element={<Login />} />
-        <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/historico" element={<Historico />} />
-        <Route path="/sobre" element={<Sobre />} /> */}
-      </Routes>
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/historico" element={<Historico />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
