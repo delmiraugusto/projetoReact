@@ -1,6 +1,6 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-// Header com ícones de login, carrinho e cadastro
 export const Header = styled.div`
   width: 100%;
   background-color: #f8f9fa;
@@ -11,7 +11,6 @@ export const Header = styled.div`
   z-index: 10;
 `;
 
-// Botão de ícone para header
 export const IconButton = styled.button`
   display: flex;
   align-items: center;
@@ -31,7 +30,6 @@ export const IconButton = styled.button`
   }
 `;
 
-// Container para as categorias com design harmonizado
 export const CategoryContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -42,7 +40,6 @@ export const CategoryContainer = styled.div`
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1); 
 `;
 
-// Botão de categoria
 export const CategoryButton = styled.button`
   padding: 8px 16px;
   border: none;
@@ -61,7 +58,6 @@ export const CategoryButton = styled.button`
   }
 `;
 
-// Container principal com visual unificado
 export const Container = styled.div`
   padding: 30px;
   max-width: 1100px;
@@ -72,7 +68,6 @@ export const Container = styled.div`
   color: #374151;
 `;
 
-// Input de busca com um design suave
 export const SearchInput = styled.input`
    width: 100%;
   max-width: 600px;
@@ -90,7 +85,6 @@ export const SearchInput = styled.input`
   }
 `;
 
-// Grid de produtos com estilo ajustado
 export const ProductsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -98,7 +92,6 @@ export const ProductsContainer = styled.div`
   padding-top: 15px;
 `;
 
-// Estilo do Card do Produto harmonizado
 export const Card = styled.div`
   padding: 18px;
   border: 1px solid #E2E8F0; 
@@ -115,7 +108,6 @@ export const Card = styled.div`
   }
 `;
 
-// Imagem do Produto
 export const Image = styled.img`
   width: 100%;
   height: 160px;
@@ -125,7 +117,6 @@ export const Image = styled.img`
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
 `;
 
-// Nome do Produto com estilo simplificado
 export const Name = styled.h3`
   font-size: 1.1em;
   margin: 10px 0;
@@ -133,7 +124,6 @@ export const Name = styled.h3`
   font-weight: bold;
 `;
 
-// Preço do Produto com destaque
 export const Price = styled.p`
   font-size: 1em;
   color: #10B981; 
@@ -141,7 +131,6 @@ export const Price = styled.p`
   font-weight: bold;
 `;
 
-// Botão de Adicionar ao Carrinho com novo design
 export const AddButton = styled.button`
   padding: 10px 16px;
   background-color: #3B82F6; 
@@ -181,8 +170,16 @@ export const NavButton = styled.button`
   transition: color 0.3s;
 
   &:hover {
-    color: #2563eb;
+    color: #0038b2;
   }
+`;
+
+export const StyledLink = styled(Link)`
+  color: inherit;
+  text-decoration: none; 
+  &:hover {
+    color: #0056b3;
+}
 `;
 
 export const SearchContainer = styled.div`
