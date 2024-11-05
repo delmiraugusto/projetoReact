@@ -20,11 +20,11 @@ export const Cart = () => {
     const { cart, addToCart, removeFromCart } = useContext(CartContext);
 
     const handleDecreaseQuantity = (product) => {
-        removeFromCart(product); // Usa a função do contexto para diminuir a quantidade
+        removeFromCart(product);
     };
 
     const handleRemoveFromCart = (product) => {
-        removeFromCart(product); // Também usa a função do contexto para remover
+        removeFromCart(product);
     };
 
     const totalPrice = cart.reduce((total, item) => total + item.product.price * item.quantity, 0);

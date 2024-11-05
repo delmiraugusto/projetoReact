@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Container, ErrorMessage, Form, Input, SuccessMessage, Title } from './style'
+import { Container, ErrorMessage, Form, SuccessMessage, Title } from './style'
 import { ButtonComponents } from '../../components/Button/style';
 import { InputStyle } from "../../components/InputField/style"
 
