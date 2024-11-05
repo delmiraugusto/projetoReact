@@ -6,7 +6,7 @@ import { Cadastro } from './pages/cadastro';
 import { ProductDetails } from './pages/ProductDetails';
 import { Login } from './pages/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import {Home} from './pages/home';
+import { Home } from './pages/home';
 import { Cart } from './pages/Cart';
 import { NotFound } from "./pages/NotFound";
 
