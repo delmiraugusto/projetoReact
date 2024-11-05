@@ -48,5 +48,40 @@ Para agregar valor ao projeto, os seguintes recursos são opcionais, mas recomen
 [Delmir Augusto](https://github.com/delmiraugusto)
 [Eric Carvalho](https://github.com/ericsilva0309)
 [Larissa Anunciação](https://github.com/lari-blip)
-[![Ryan Souza](https://github.com/ryansouza9.png?size=100)](https://github.com/ryansouza9)  
-**[Ryan Souza](https://github.com/ryansouza9)**
+
+## Colaboradores
+
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://github.com/carladanieleferreira.png?size=100" width="100px;" alt="Carla Daniele"/><br />
+        <sub><b>Carla Daniele</b></sub>
+      </a>
+    </td>
+    <td align="center">
+        <img src="https://github.com/lari-blip.png?size=100" width="100px;" alt="Larissa Anunciação"/><br />
+        <sub><b>Larissa Anunciação</b></sub>
+      </a>
+    </td>
+    <td align="center">
+        <img src="https://github.com/myllez2110.png?size=100" width="100px;" alt="Daniel Rufino"/><br />
+        <sub><b>Daniel Rufino</b></sub>
+      </a>
+    </td>
+    <td align="center">
+        <img src="https://github.com/delmiraugusto.png?size=100" width="100px;" alt="Delmir Augusto"/><br />
+        <sub><b>Delmir Augusto</b></sub>
+      </a>
+    </td>
+    <td align="center">
+        <img src="https://github.com/ericsilva0309.png?size=100" width="100px;" alt="Eric Carvalho"/><br />
+        <sub><b>Eric Carvalho</b></sub>
+      </a>
+    </td>
+    <td align="center">
+        <img src="https://github.com/ryansouza9.png?size=100" width="100px;" alt="Ryan Souza"/><br />
+        <sub><b>Ryan Souza</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
