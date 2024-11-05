@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f3f3f3;
+  background-color: #d3d3d3;
 `;
 
 export const Form = styled.form`
@@ -13,18 +13,14 @@ export const Form = styled.form`
   flex-direction: column;
   width: 300px;
   padding: 20px;
-  background-color: black;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: white;
+  color: black;
 `;
 
-export const Input = styled.input`
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+export const Title = styled.h2`
+    text-align: center; 
 `;
 
 export const Button = styled.button`
