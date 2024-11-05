@@ -1,4 +1,4 @@
-import { Historico } from "./pages/Historico"
+
 import { Sobre } from "./pages/Sobre"
 import React from 'react';
 import { Cadastro } from './pages/cadastro';
