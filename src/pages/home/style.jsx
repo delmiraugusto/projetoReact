@@ -1,6 +1,6 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-// Header com ícones de login, carrinho e cadastro
 export const Header = styled.div`
   width: 100%;
   background-color: #f8f9fa;
@@ -11,7 +11,6 @@ export const Header = styled.div`
   z-index: 10;
 `;
 
-// Botão de ícone para header
 export const IconButton = styled.button`
   display: flex;
   align-items: center;
@@ -31,6 +30,7 @@ export const IconButton = styled.button`
   }
 `;
 
+
 // Container para as categorias com design harmonizado
 export const CategoryContainer = styled.div`
   display: flex;
@@ -42,7 +42,9 @@ export const CategoryContainer = styled.div`
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1); 
 `;
 
+
 // Botão de categoria
+
 export const CategoryButton = styled.button`
   padding: 8px 16px;
   border: none;
@@ -61,6 +63,7 @@ export const CategoryButton = styled.button`
   }
 `;
 
+
 // Container principal com visual unificado
 export const Container = styled.div`
   padding: 30px;
@@ -71,6 +74,7 @@ export const Container = styled.div`
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
   color: #374151;
 `;
+
 
 // Input de busca com um design suave
 export const SearchInput = styled.input`
@@ -181,8 +185,16 @@ export const NavButton = styled.button`
   transition: color 0.3s;
 
   &:hover {
-    color: #2563eb;
+    color: #0038b2;
   }
+`;
+
+export const StyledLink = styled(Link)`
+  color: inherit;
+  text-decoration: none; 
+  &:hover {
+    color: #0056b3;
+}
 `;
 
 export const SearchContainer = styled.div`

@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { CategorySelector } from '../../components/CategorySelector';
+
 import { ProductCard } from '../../components/ProductCard';
 import { fetchProducts } from '../../servicesAPI';
-import { 
-  Header, 
-  NavBar, 
-  NavButton, 
-  SearchContainer, 
-  Container, 
-  ProductsContainer, 
-  SearchInput 
+import {
+  Header,
+  NavBar,
+  NavButton,
+  SearchContainer,
+  Container,
+  ProductsContainer,
+  SearchInput,
+  StyledLink
 } from './style';
 import { FaUserCircle, FaRegNewspaper, FaCartPlus, FaHistory, FaInfoCircle } from 'react-icons/fa';
 
@@ -51,20 +53,13 @@ export const Home = () => {
   return (
     <Container>
 
-    
-
       <Header>
-
-      
-
         <NavBar>
-          
-          <NavButton><FaUserCircle /> Login</NavButton>
-          <NavButton><FaRegNewspaper /> Cadastro</NavButton>
-          <NavButton><FaCartPlus /> Carrinho</NavButton>
-          <NavButton><FaHistory /> Histórico de compras</NavButton>
-          <NavButton><FaInfoCircle /> Sobre nós</NavButton>
-
+          <NavButton><FaUserCircle /> <StyledLink to="/login">Login</StyledLink></NavButton>
+          <NavButton><FaRegNewspaper /><StyledLink to="/cadastro">Cadastro</StyledLink></NavButton>
+          <NavButton><FaCartPlus /> <StyledLink to="/carrinho">Carrinho</StyledLink></NavButton>
+          <NavButton><FaHistory /> <StyledLink to="/historico">Histórico de Compras</StyledLink></NavButton>
+          <NavButton><FaInfoCircle /><StyledLink to="/sobre">Sobre nós</StyledLink></NavButton>
         </NavBar>
 
       </Header>

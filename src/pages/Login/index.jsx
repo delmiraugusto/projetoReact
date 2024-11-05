@@ -26,14 +26,13 @@ export const Login = () => {
 
         try {
             const response = await axios.get('https://672a5446976a834dd0230049.mockapi.io/users');
-
-            // Verifica se existe algum usuário com o email e senha fornecidos
+          
             const user = response.data.find((user) => user.email === email && user.password === password);
 
             if (user) {
-                // Se o usuário existe, redireciona para a página desejada
                 alert("Login Realizado com Sucesso");
-                navigate('/cadastro');
+                navigate('/home');
+
             } else {
                 alert('Dados inválidos');
             }
