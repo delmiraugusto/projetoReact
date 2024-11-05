@@ -1,8 +1,11 @@
 import axios from 'axios';
 
-const baseURl = `https://mockapi.io/clone/${import.meta.env.VITE_KEY}`;
+const key = import.meta.env.VITE_KEY
+const baseURl = `https://${key}.mockapi.io`;
+
 const usersEndpoint = import.meta.env.VITE_URL_USERS;
 const productsEndpoint = import.meta.env.VITE_URL_PRODUCTS;
+
 
 export const fetchUsers = async () => {
     try {
@@ -15,11 +18,12 @@ export const fetchUsers = async () => {
 };
 
 export const fetchProducts = async () => {
+
     try {
         const response = await axios.get(`${baseURl}${productsEndpoint}`);
         return response;
     } catch (error) {
-        console.error('Erro ao buscar produtos:', error);
+        console.error('Erro 1:', error);
         throw error;
     }
 }

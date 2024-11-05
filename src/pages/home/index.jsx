@@ -1,60 +1,81 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { CategorySelector } from '../../components/CategorySelector';
+import { ProductCard } from '../../components/ProductCard';
+import { fetchProducts } from '../../servicesAPI';
+import { 
+  Header, 
+  NavBar, 
+  NavButton, 
+  SearchContainer, 
+  Container, 
+  ProductsContainer, 
+  SearchInput 
+} from './style';
+import { FaShoppingCart, FaUser, FaSignInAlt } from 'react-icons/fa';
 
-// import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
-// import {CategorySelector} from '../../components/CategorySelector';
-// import {ProductCard} from '../../components/ProductCard';
-// import { Container, SearchInput, ProductsContainer } from './style';
+export const Home = () => {
+  const [selectedCategory, setSelectedCategory] = useState('Todos');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-// export const Home = () => {
-//   const [selectedCategory, setSelectedCategory] = useState('Todos');
-//   const [searchTerm, setSearchTerm] = useState('');
-//   const [products, setProducts] = useState([]);
-//   const [loading, setLoading] = useState(true);
+  const handleCategoryChange = (category) => setSelectedCategory(category);
 
+  const handleSearchChange = (event) => setSearchTerm(event.target.value);
 
-//   const handleCategoryChange = (category) => {
-//     setSelectedCategory(category);
-//   };
+  const loadAPI = async () => {
+    setLoading(true);
+    setError(null);
+    const response = await fetchProducts();
+    if (response.status === 200) {
+      setProducts(response.data);
+    } else {
+      console.error('Erro ao buscar produtos', response);
+    }
+    setLoading(false);
+  };
 
-//   const handleSearchChange = (event) => {
-//     setSearchTerm(event.target.value);
-//   };
+  useEffect(() => {
+    loadAPI();
+  }, []);
 
-//   useEffect(() => {
-//     axios.get('/api/products')
-//       .then(response => setProducts(response.data))
-//       .catch(error => console.error(error));
-//   }, []);
+  const filteredProducts = products.filter(
+    (product) =>
+      (selectedCategory === 'Todos' || product.category === selectedCategory) &&
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
-//    const filteredProducts = products.filter(product =>
-//     (selectedCategory === 'Todos' || product.category === selectedCategory) &&
-//      product.name.toLowerCase().includes(searchTerm.toLowerCase())
-//    );
-
-
-
-//   return (
-//     <Container>
-//       <SearchInput
-//         type="text"
-//         placeholder="Buscar produtos..."
-//         value={searchTerm}
-//         onChange={handleSearchChange}
-//       />
-//       <CategorySelector onCategoryChange={handleCategoryChange} />
-//       <ProductsContainer> 
-//       {loading ? (
-//           <p>Loading products...</p>  // Exibe enquanto está carregando
-//         ) : (
-//         filteredProducts.map((product) => (
-//            <ProductCard key={product.id} product={product} />
-//          )))}
-//       </ProductsContainer>
-//      </Container>
-
-   
-
-//   );
-// };
-
-
+  return (
+    <Container>
+      <Header>
+        <NavBar>
+          <NavButton><FaUser /> Login</NavButton>
+          <NavButton><FaSignInAlt /> Cadastro</NavButton>
+          <NavButton><FaShoppingCart /> Carrinho</NavButton>
+        </NavBar>
+      </Header>
+      <SearchContainer>
+        <SearchInput
+          type="text"
+          placeholder="Buscar produtos..."
+          value={searchTerm}
+          onChange={handleSearchChange}
+        />
+      </SearchContainer>
+      <CategorySelector onCategoryChange={handleCategoryChange} />
+      <ProductsContainer>
+        {loading ? (
+          <p>Carregando produtos...</p>
+        ) : error ? (
+          <p>{error}</p>
+        ) : (
+          filteredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))
+        )}
+      </ProductsContainer>
+    </Container>
+  );
+};
