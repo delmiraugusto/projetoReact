@@ -35,11 +35,30 @@ Para agregar valor ao projeto, os seguintes recursos são opcionais, mas recomen
 - **useState e useEffect:** Hooks do React utilizados para gerenciar estado e efeitos colaterais.
 
 ## Instruções de Instalação
-- **Faça o git clone:** https://github.com/delmiraugusto/projetoReact
+- **Faça o git clone:**
+   ```bash
+   git clone ttps://github.com/delmiraugusto/projetoReact
 - **Navegue até a página do projeto.** Exemplo: /home/administrador/Documents/Serratec-2024-2/React/projetoReact
-- **Instale as dependências:** npm install
-- **Configurar variáveis de ambiente (se necessário):** Crie um arquivo .env na raiz do projeto e adicione suas variáveis de ambiente, como a URL da API.
-- **Inicie o servidor de desenvolvedor:** npm run dev
+- **Instale as dependências:**
+  ```bash
+  npm install
+  ```
+
+  ```bash
+  npm i axios
+  ```
+
+  ```bash
+  npm i react-router-dom
+  ```
+- **Configurar variáveis de ambiente (se necessário):** Crie um arquivo .env na raiz do projeto e adicione suas variáveis de ambiente:
+  ```bash
+  VITE_URL_USERS="/users"
+  VITE_URL_PRODUCTS="/products"
+  VITE_KEY="672930946d5fa4901b6c6e97"
+- **Inicie o servidor de desenvolvedor:**
+  ```bash
+  npm run dev
 - **Acesse a aplicação.** Geralmente: https://localhost:5173/
 
 # [Contribuidores](https://github.com/delmiraugusto/projetoReact/graphs/contributors)
@@ -49,11 +68,6 @@ Para agregar valor ao projeto, os seguintes recursos são opcionais, mas recomen
     <td align="center">
         <img src="https://github.com/carladanieleferreira.png?size=100" width="100px;" alt="Carla Daniele"/><br />
         <sub><b>Carla Daniele</b></sub>
-      </a>
-    </td>
-    <td align="center">
-        <img src="https://github.com/lari-blip.png?size=100" width="100px;" alt="Larissa Anunciação"/><br />
-        <sub><b>Larissa Anunciação</b></sub>
       </a>
     </td>
     <td align="center">
@@ -69,6 +83,11 @@ Para agregar valor ao projeto, os seguintes recursos são opcionais, mas recomen
     <td align="center">
         <img src="https://github.com/ericsilva0309.png?size=100" width="100px;" alt="Eric Carvalho"/><br />
         <sub><b>Eric Carvalho</b></sub>
+      </a>
+    </td>
+    <td align="center">
+        <img src="https://github.com/lari-blip.png?size=100" width="100px;" alt="Larissa Anunciação"/><br />
+        <sub><b>Larissa Anunciação</b></sub>
       </a>
     </td>
     <td align="center">
