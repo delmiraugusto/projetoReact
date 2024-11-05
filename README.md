@@ -48,4 +48,5 @@ Para agregar valor ao projeto, os seguintes recursos são opcionais, mas recomen
 [Delmir Augusto](https://github.com/delmiraugusto)
 [Eric Carvalho](https://github.com/ericsilva0309)
 [Larissa Anunciação](https://github.com/lari-blip)
-[Ryan Souza](https://github.com/ryansouza9)
+[![Ryan Souza](https://github.com/ryansouza9.png?size=100)](https://github.com/ryansouza9)  
+**[Ryan Souza](https://github.com/ryansouza9)**
