@@ -34,22 +34,25 @@
 
 import styled from 'styled-components';
 
- export const Container = styled.div`
+export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: #76bffc;
+    
 `;
 
 export const Form = styled.form`
     background-color: #0868d475;
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    
+    padding: 40px;    
 `;
 
 export const Title = styled.h2`
@@ -57,33 +60,6 @@ export const Title = styled.h2`
     margin-bottom: 1.5rem;
     font-size: 24px;
     color: #fafafc;
-`;
-
-export const Input = styled.input`
-    width: 100%;
-    padding: 0.8rem;
-    margin: 0.8rem 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    &:focus {
-        border-color: #007bff;
-        outline: none;
-    }
-`;
-
-export const Button = styled.button`
-    width: 100%;
-    padding: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    &:hover {
-        background-color: #0056b3;
-    }
 `;
 
 export const ErrorMessage = styled.p`

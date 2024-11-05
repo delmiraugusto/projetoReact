@@ -31,7 +31,7 @@ export const Login = () => {
 
             if (user) {
                 alert("Login Realizado com Sucesso");
-                navigate('/cadastro');
+                navigate('/home');
             } else {
                 alert('Dados inválidos');
             }
