@@ -42,13 +42,6 @@ Para agregar valor ao projeto, os seguintes recursos são opcionais, mas recomen
 - **Inicie o servidor de desenvolvedor:** npm run dev
 - **Acesse a aplicação.** Geralmente: https://localhost:5173/
 
-## Colaboradores 
-[Carla Daniele](https://github.com/carladanieleferreira)
-[Daniel Rufino](https://github.com/myllez2110)
-[Delmir Augusto](https://github.com/delmiraugusto)
-[Eric Carvalho](https://github.com/ericsilva0309)
-[Larissa Anunciação](https://github.com/lari-blip)
-
 ## Colaboradores
 
 <table>
