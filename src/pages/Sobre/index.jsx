@@ -103,7 +103,7 @@ export const Sobre = () => {
           </Text>
           <Img src={Loja6}/>
         </Block>
-      
+
         <Block>
           <Img src={Pessoas}/>
           <Text>
