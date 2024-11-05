@@ -26,12 +26,13 @@ export const Login = () => {
 
         try {
             const response = await axios.get('https://672a5446976a834dd0230049.mockapi.io/users');
-
+          
             const user = response.data.find((user) => user.email === email && user.password === password);
 
             if (user) {
                 alert("Login Realizado com Sucesso");
                 navigate('/home');
+
             } else {
                 alert('Dados inválidos');
             }

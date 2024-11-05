@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { CategorySelector } from '../../components/CategorySelector';
-// import { Link } from 'react-router-dom';
+
 import { ProductCard } from '../../components/ProductCard';
 import { fetchProducts } from '../../servicesAPI';
 import {
@@ -52,6 +52,7 @@ export const Home = () => {
 
   return (
     <Container>
+
       <Header>
         <NavBar>
           <NavButton><FaUserCircle /> <StyledLink to="/login">Login</StyledLink></NavButton>
@@ -60,6 +61,7 @@ export const Home = () => {
           <NavButton><FaHistory /> <StyledLink to="/historico">Histórico de Compras</StyledLink></NavButton>
           <NavButton><FaInfoCircle /><StyledLink to="/sobre">Sobre nós</StyledLink></NavButton>
         </NavBar>
+
       </Header>
       <SearchContainer>
         <SearchInput
