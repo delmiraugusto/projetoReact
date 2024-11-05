@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Div = styled.div`
   font-size: 24px;
-  color: white;
+  color: black;
   text-align: center;
   background-color: #f9f9f9;
   padding-top: 100px;
