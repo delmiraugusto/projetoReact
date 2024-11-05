@@ -1,5 +1,5 @@
 import React from 'react';
-import { CategoryContainer, CategoryButton } from '../pages/home/style';
+import { CategoryContainer, CategoryButton } from '../../pages/home/style';
 
 export const categories = ['Todos', 'Eletrônicos', 'Livros', 'Moda', 'Brinquedos', 'Esportes'];
 

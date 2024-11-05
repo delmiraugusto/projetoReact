@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image, Name, Price, AddButton } from '../pages/home/style';
+import { Card, Image, Name, Price, AddButton } from './style';
 
 export const ProductCard = ({ product }) => (
   <Card>
