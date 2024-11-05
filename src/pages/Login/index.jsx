@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Container, Form, Button, Title, Paragraf } from './style';
+import { Container, Form, Title, Paragraf } from './style';
 import { InputStyle } from "../../components/InputField/style"
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { ButtonComponents } from '../../components/Button/style';
 
 export const Login = () => {
     const [email, setEmail] = useState('');
@@ -62,7 +63,7 @@ export const Login = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                 />
-                <Button type="submit">Logar</Button>
+                <ButtonComponents type="submit">Logar</ButtonComponents>
                 <Paragraf>
                     Não possui login?{' '}
                     <Link to="/cadastro">Cadastre-se</Link>
