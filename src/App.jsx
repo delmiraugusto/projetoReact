@@ -1,12 +1,9 @@
-import React from 'react';
-//import {Home} from './pages/home';
+import { Historico } from "./pages/Historico"
+import { Sobre } from "./pages/Sobre"
 
 export const App = () => {
-  return (
-    <div className="App">
-      <Home />
-    </div>
-  );
+  return(
+    // <Historico />
+    <Sobre />
+  )
 }
-
-export default App;
