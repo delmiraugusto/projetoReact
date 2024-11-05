@@ -59,9 +59,9 @@ Para agregar valor ao projeto, os seguintes recursos são opcionais, mas recomen
 - **Inicie o servidor de desenvolvedor:**
   ```bash
   npm run dev
-- **Acesse a aplicação.** Geralmente: https://localhost:5173/
+- **Acesse a aplicação.** Geralmente: <a href="https://localhost:5173/" target="_blank">https://localhost:5173/</a>
 
-# [Contribuidores](https://github.com/delmiraugusto/projetoReact/graphs/contributors)
+# <a href="https://github.com/delmiraugusto/projetoReact/graphs/contributors" target="_blank">Contribuidores</a>
 
 <table>
   <tr>
