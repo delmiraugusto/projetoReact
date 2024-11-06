@@ -7,6 +7,18 @@ export const Container = styled.div`
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+
+    @media(min-width: 1024px) {
+        padding: 20px;
+    }
+
+    @media(min-width: 768px) {
+        padding: 15px;
+    }
+
+    @media(min-width: 480px) {
+        padding: 10px;
+    }
 `;
 
 export const MainSection = styled.div`
@@ -21,6 +33,10 @@ export const MainSection = styled.div`
         flex-direction: row;
         justify-content: flex-start;
         gap: 20px;
+    }
+
+    @media(min-width: 1024px) {
+        padding-right: 0;
     }
 `;
 
@@ -45,8 +61,12 @@ export const LargeImage = styled.div`
         background-position: 50% center;
     }
 
-    @media(max-width: 768px) {
+    @media(min-width: 768px) {
         height: 300px;
+    }
+
+    @media(min-width: 1024px) {
+        height: 400px;
     }
 `;
 
@@ -69,6 +89,10 @@ export const Thumbnails = styled.div`
             transform: scale(1.05);
         }
     }
+
+    @media(min-width: 768px) {
+        gap: 10px;
+    }
 `;
 
 export const ProductInfo = styled.div`
@@ -84,12 +108,28 @@ export const ProductInfo = styled.div`
         color: #1e4a7f;
         margin-bottom: 15px;
         font-weight: 600;
+
+        @media(min-width: 768px) {
+            font-size: 24px;
+        }
+
+        @media(min-width: 1024px) {
+            font-size: 28px;
+        }
     }
 
     p {
         font-size: 16px;
         margin: 8px 0;
         color: #555;
+
+        @media(min-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media(min-width: 1024px) {
+            font-size: 16px;
+        }
     }
 
     .price {
@@ -97,6 +137,14 @@ export const ProductInfo = styled.div`
         color: #e01c1c;
         font-weight: 700;
         margin-bottom: -3px;
+
+        @media(min-width: 768px) {
+            font-size: 18px;
+        }
+
+        @media(min-width: 1024px) {
+            font-size: 20px;
+        }
     }
 
     .rating {
@@ -128,6 +176,16 @@ export const AddToCartButton = styled.button`
         background-color: #1e4a7f;
         transform: scale(1.05);
     }
+
+    @media(min-width: 768px) {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    @media(min-width: 1024px) {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
 `;
 
 export const QuantityInput = styled.input`
@@ -144,6 +202,14 @@ export const QuantityInput = styled.input`
     &:focus {
         border-color: #3a8dff;
         outline: none;
+    }
+
+    @media(min-width: 768px) {
+        width: 90px;
+    }
+
+    @media(min-width: 1024px) {
+        width: 100px;
     }
 `;
 
@@ -201,6 +267,18 @@ export const RecommendedProducts = styled.div`
                 color: #3a8dff;
                 font-weight: bold;
             }
+        }
+    }
+
+    @media(min-width: 768px) {
+        .products-list {
+            flex-direction: row;
+        }
+    }
+
+    @media(min-width: 1024px) {
+        .products-list {
+            flex-direction: row;
         }
     }
 `;

@@ -123,7 +123,9 @@ export const ProductDetails = () => {
 
                         <ProductInfo>
                             <h1>{product.name}</h1>
-                            <p className="price">Preço: R$ {product.price ? product.price.toFixed(2) : 'N/A'}</p>
+                            <p className="price">
+                                Preço: R$ {product.price ? parseFloat(product.price).toFixed(2) : 'N/A'}
+                            </p>
                             <p className="discount-price">Último lance: R$ 4800000.00</p>
                             <p>{product.description}</p>
                             <p className='rating'>Lances: {product.rating}</p>
