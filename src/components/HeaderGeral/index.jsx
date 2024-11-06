@@ -13,7 +13,7 @@ export const HeaderGeral = () => {
             <NavBar>
                 <NavButton><FaUserCircle /> <StyledLink to="/login">Login</StyledLink></NavButton>
                 <NavButton><FaRegNewspaper /><StyledLink to="/cadastro">Cadastro</StyledLink></NavButton>
-                <NavButton><FaCartPlus /> <StyledLink to="/carrinho">Carrinho</StyledLink></NavButton>
+                <NavButton><FaCartPlus /> <StyledLink to="/cart">Carrinho</StyledLink></NavButton>
                 <NavButton><FaHistory /> <StyledLink to="/historico">Histórico de Compras</StyledLink></NavButton>
                 <NavButton><FaInfoCircle /><StyledLink to="/sobre">Sobre nós</StyledLink></NavButton>
             </NavBar>
