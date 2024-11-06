@@ -1,42 +1,37 @@
 import styled from 'styled-components';
 
-// Estilo aprimorado para o Container de Categorias
+// Novo estilo para o Container de Categorias
 export const CategoryContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px;
-  background-color: #1e293b;
-  border-radius: 16px;
+  padding: 15px;
+  background-color: #1a202c; // Fundo escuro
+  border-radius: 12px;
   margin: 20px auto;
-  max-width: 85%;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-  gap: 10px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 `;
 
-// Estilo aprimorado para o Botão de Categoria
+// Novo estilo para o Botão de Categoria
 export const CategoryButton = styled.button`
-  padding: 12px 18px;
-  background-color: #334155;
-  color: #e2e8f0;
-  font-size: 0.95em;
+  padding: 10px 15px;
+  background-color: #2d3748; // Fundo cinza escuro
+  color: #e2e8f0; // Texto cinza claro
+  font-size: 0.9em;
   font-weight: 500;
   text-transform: capitalize;
-  border-radius: 8px;
+  border-radius: 6px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
 
   &:hover {
-    background-color: #475569;
+    background-color: #4a5568; // Fundo cinza médio ao passar o mouse
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 
   &.active {
-    background-color: #38bdf8;
-    color: #1e293b;
-    box-shadow: 0 3px 8px rgba(56, 189, 248, 0.4);
+    background-color: #63b3ed; // Azul claro quando ativo
+    color: #1a202c; // Texto escuro quando ativo
   }
 `;

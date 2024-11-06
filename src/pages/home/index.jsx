@@ -1,22 +1,18 @@
 import React, { useState, useEffect } from 'react';
-
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { CategorySelector } from '../../components/CategorySelector';
 
-
-  Header, 
-  NavBar, 
-  NavButton, 
-  SearchContainer, 
-  Container, 
-  ProductsContainer, 
-  SearchInput, 
-  LogoContainer, 
-  Logo 
-} from './style'; 
-import { FaUserCircle, FaRegNewspaper, FaCartPlus, FaHistory, FaInfoCircle } from 'react-icons/fa';
-import logo from '../../assets/images/logo.png';
-
+import { ProductCard } from '../../components/ProductCard';
+import { fetchProducts } from '../../servicesAPI';
+import {
+  SearchContainer,
+  Container,
+  ProductsContainer,
+  SearchInput,
+  StyledLink,
+  Image
+} from './style';
 export const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
   const [searchTerm, setSearchTerm] = useState('');
@@ -25,6 +21,7 @@ export const Home = () => {
   const [error, setError] = useState(null);
 
   const handleCategoryChange = (category) => setSelectedCategory(category);
+
   const handleSearchChange = (event) => setSearchTerm(event.target.value);
 
   const loadAPI = async () => {
@@ -51,23 +48,6 @@ export const Home = () => {
 
   return (
     <Container>
-
-      <Header>
-      
-        <LogoContainer>
-          <Logo src={logo} alt="Logo" />
-        </LogoContainer>
-
-        <NavBar>
-          <NavButton><FaUserCircle /> <StyledLink to="/login">Login</StyledLink></NavButton>
-          <NavButton><FaRegNewspaper /><StyledLink to="/cadastro">Cadastro</StyledLink></NavButton>
-          <NavButton><FaCartPlus /> <StyledLink to="/carrinho">Carrinho</StyledLink></NavButton>
-          <NavButton><FaHistory /> <StyledLink to="/historico">Histórico de Compras</StyledLink></NavButton>
-          <NavButton><FaInfoCircle /><StyledLink to="/sobre">Sobre nós</StyledLink></NavButton>
-        </NavBar>
-
-      </Header>
-
       <SearchContainer>
         <SearchInput
           type="text"
@@ -76,7 +56,6 @@ export const Home = () => {
           onChange={handleSearchChange}
         />
       </SearchContainer>
-
       <CategorySelector onCategoryChange={handleCategoryChange} />
       <ProductsContainer>
         {loading ? (
