@@ -18,7 +18,6 @@ export const ContentForms = styled.div`
 
 export const Body = styled.div`
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   display: flex;
   padding: 20px;
@@ -30,6 +29,7 @@ export const Title = styled.h1`
   flex-direction: column;
   display: flex;
   padding: 20px;
+  font-size: 50px;
 `
 
 export const Img = styled.img`
@@ -48,21 +48,20 @@ export const ImgMenor = styled.img`
 `
 
 export const Link = styled.a`
-display: inline-block;
-margin: 0 10px; /* Margem entre os ícones */
-text-decoration: none; /* Remove underline */
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
 
-&:hover img {
-  transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
-  transition: transform 0.2s; /* Transição suave */
-}
-`;
+  &:hover img {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
+`
 
-// Estilizando o ícone
 export const Icon = styled.img`
-width: 40px; /* Defina o tamanho do ícone conforme necessário */
-height: auto; /* Mantém a proporção da imagem */
-`;
+  width: 40px;
+  height: auto;
+`
 
 export const Block = styled.div`
   background-color: #F5F5DC;
@@ -90,10 +89,6 @@ export const Text = styled.text`
   padding: 10px;
   color: #000000;
   transition: color 0.3s ease;
-  
-  &:hover {
-    color: #008000;
-  }
 `
 
 export const Footer = styled.div`
@@ -101,9 +96,10 @@ export const Footer = styled.div`
   background-color: #6c5f5f;
   color: #e1d5d5;
   padding: 20px;
-  font-size: 17px;
+  font-size: 17.1px;
+  width: 189.6vh;
   cursor: pointer;
-  width: 100vw;
+
   &:hover {
     background-color: #4c4c4c;
   }
