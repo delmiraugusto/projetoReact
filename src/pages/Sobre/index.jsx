@@ -1,18 +1,18 @@
-import { Container } from "../Sobre/style"
-import { Body, Block, Img, Title, ContentForms, Text, ImgMenor, Footer, Icon, Link} from "./style"
-import Loja1 from "../../assets/images/Loja1.jpg"
-import Loja2 from "../../assets/images/Loja2.jpg"
-import Loja3 from "../../assets/images/Loja3.jpg"
-import Loja4 from "../../assets/images/Loja4.jpg"
-import Pessoas from "../../assets/images/Pessoas.jpg"
-import Loja5 from "../../assets/images/Loja5.jpg"
-import Loja6 from "../../assets/images/Loja6.jpg"
-import Cultura from "../../assets/images/Cultura.png"
-import Facebook from "../../assets/icons/facebook.png"
-import Instagram from "../../assets/icons/instagram.png"
-import Linkedin from "../../assets/icons/linkedin.png"
-import Github from "../../assets/icons/github.png"
-import Youtube from "../../assets/icons/youtube.png"
+import { Body, Block, Img, Title, ContentForms, Text, ImgMenor, Footer, Icon, Link, Container} from "./style";
+import React from 'react';
+import Loja1 from "../../assets/images/Loja1.jpg";
+import Loja2 from "../../assets/images/Loja2.jpg";
+import Loja3 from "../../assets/images/Loja3.jpg";
+import Loja4 from "../../assets/images/Loja4.jpg";
+import Loja5 from "../../assets/images/Loja5.jpg";
+import Loja6 from "../../assets/images/Loja6.jpg";
+import Pessoas from "../../assets/images/Pessoas.jpg";
+import Cultura from "../../assets/images/Cultura.png";
+import Facebook from "../../assets/icons/facebook.png";
+import Instagram from "../../assets/icons/instagram.png";
+import Linkedin from "../../assets/icons/linkedin.png";
+import Github from "../../assets/icons/github.png";
+import Youtube from "../../assets/icons/youtube.png";
 
 export const Sobre = () => {
   return(
@@ -23,10 +23,10 @@ export const Sobre = () => {
           <Text>
             <Title>Sobre Nós</Title>
             <Body>
-              A Antiquidade Moderna é um espaço dedicado à preservação e celebração da 
-              história, oferecendo uma seleção única de peças raras e encantadoras. 
-              Nossa paixão por antiquidades nos move a compartilhar histórias e legados 
-              que transcendem gerações.
+              A Vintage Collection é uma loja dedicada à paixão por itens colecionáveis 
+              de estilo vintage. Celebramos a história, oferecendo peças únicas e 
+              autênticas que evocam épocas passadas e trazem um charme nostálgico para 
+              quem aprecia o valor das coisas bem-feitas e com histórias para contar.
             </Body>
           </Text>
         </Block>
@@ -35,15 +35,11 @@ export const Sobre = () => {
           <Text>
             <Title>Nossa História</Title>
             <Body>
-              Fundada em 2014, a Antiquidade Moderna nasceu do amor por objetos com 
-              história. Desde o início, nossa missão tem sido encontrar e restaurar 
-              itens que carregam consigo memórias e tradições, permitindo que nossos 
-              clientes tragam um pedaço do passado para suas vidas.<br /><br />
-
-              Começamos oferecendo decorações, relíquias, e objetos colecionáveis para
-              amigos e familiares, buscando sempre itens singulares e excêntricos para 
-              sua casa, coleção ou cenário. Com o passar dos anos, nossa coleção cresceu, 
-              tornando-se um destino querido para colecionadores e amantes da história.
+              Fundada em 2014, a Vintage Collection nasceu do amor por objetos 
+              vintage e colecionáveis. Desde o início, nossa missão tem sido 
+              curar e preservar peças com personalidade e histórias marcantes, 
+              dando a nossos clientes a oportunidade de trazer um toque de 
+              nostalgia e elegância para seus espaços.
             </Body>
           </Text>
           <Img src={Loja2}/>
@@ -54,9 +50,9 @@ export const Sobre = () => {
           <Text>
             <Title>Nossa Visão</Title>
             <Body>
-              Ser reconhecida como a principal referência em antiquidades na região, 
-              admirada pela qualidade de nossa coleção e pelo nosso conhecimento, 
-              contribuindo para a valorização do patrimônio histórico.
+              Ser reconhecida como uma referência em colecionáveis vintage, admirada 
+              pela qualidade da nossa curadoria e pelo nosso conhecimento, inspirando 
+              as pessoas a valorizarem o estilo e o charme do passado.
             </Body>
           </Text>
         </Block>
@@ -65,14 +61,10 @@ export const Sobre = () => {
           <Text>
             <Title>Nossos Valores</Title>
             <Body>
-              Paixão pela História: Cada peça em nossa loja possui uma narrativa que 
-              merece ser contada.<br />
-              Comprometimento: Dedicamo-nos a oferecer um atendimento excepcional, 
-              ajudando nossos clientes a encontrar o item perfeito.<br />
-              Autenticidade: Garantimos que todas as peças são genuínas e de alta 
-              qualidade.<br />
-              Preservação: Valorizamos a importância da conservação de bens culturais e 
-              históricos.
+              <span><strong>Paixão pelo Vintage:</strong> Cada peça possui um passado único, e nos orgulhamos de preservá-lo.<br /></span>
+              <span><strong>Comprometimento:</strong> Nosso atendimento é personalizado, e estamos sempre prontos para ajudar a encontrar o item perfeito.<br /></span>
+              <span><strong>Autenticidade:</strong> Garantimos a originalidade e a qualidade de cada peça em nossa coleção.<br /></span>
+              <span><strong>Conservação:</strong> Valorizamos a preservação de objetos históricos, promovendo a durabilidade e o respeito ao design clássico.</span>
             </Body>
           </Text>
           <Img src={Loja4}/>
@@ -83,22 +75,24 @@ export const Sobre = () => {
           <Text>
             <Title>Nossa Missão</Title>
             <Body>
-              Oferecer uma experiência única de compra, proporcionando acesso a peças 
-              raras e autênticas que contam histórias. Estamos comprometidos em 
-              preservar a cultura e a arte através de cada item que oferecemos, sempre 
-              com atenção à qualidade e à autenticidade.
+              Oferecer uma experiência autêntica para os amantes do vintage, 
+              conectando-os com peças raras e originais que traduzem um estilo de 
+              vida atemporal. Estamos comprometidos em preservar a cultura e o design 
+              de cada época representada em nossa coleção, sempre mantendo o foco na 
+              qualidade e na autenticidade.
             </Body>
-            </Text>
+          </Text>
         </Block>
 
         <Block>
           <Text>
             <Title>Nossos Produtos</Title>
             <Body>
-              Na Antiquidade Moderna, você encontrará uma ampla gama de itens, desde 
-              móveis antigos a obras de arte, e muito mais. Se você é um colecionador 
-              experiente ou alguém à procura de uma peça especial, temos algo que 
-              certamente irá encantá-lo.
+              Na Vintage Collection, você encontrará uma seleção diversificada de itens 
+              vintage: desde acessórios decorativos, discos de vinil, cartazes de época, 
+              até objetos icônicos e de coleção. Cada peça é cuidadosamente escolhida 
+              para enriquecer a experiência de colecionadores e entusiastas, adicionando 
+              um toque de classe e história ao dia a dia.
             </Body>
           </Text>
           <Img src={Loja6}/>
@@ -109,10 +103,10 @@ export const Sobre = () => {
           <Text>
             <Title>Equipe</Title>
             <Body>
-              Nossa equipe é formada por apaixonados por antiguidades, com conhecimento 
-              profundo sobre cada peça em nossa coleção. Estamos sempre prontos para 
-              compartilhar informações e ajudar nossos clientes a fazer as melhores 
-              escolhas.
+              Nossa equipe é composta por especialistas em colecionáveis vintage, 
+              apaixonados por cada detalhe e com amplo conhecimento sobre nossas peças. 
+              Estamos prontos para compartilhar informações, histórias, e auxiliar na 
+              escolha do item ideal para cada cliente.
             </Body>
           </Text>
         </Block>
@@ -121,16 +115,16 @@ export const Sobre = () => {
           <Text>
             <Title>Responsabilidade Social</Title>
             <Body>
-              A Antiquidade Moderna se dedica também à promoção da cultura local, 
-              participando de iniciativas que incentivam a educação e a preservação do 
-              patrimônio histórico. Acreditamos que a valorização do passado é essencial
-              para o futuro.
+              A Vintage Collection participa de iniciativas que promovem a 
+              valorização cultural e a sustentabilidade. Acreditamos que 
+              valorizar o passado é fundamental para construir um futuro onde a 
+              história e o design clássico tenham um papel importante.
             </Body>
           </Text>
           <Img src={Cultura}/>
         </Block>
       </ContentForms>
-      
+
       <Footer>
         <Title>Fale Conosco</Title>
         <Body>
@@ -163,5 +157,5 @@ export const Sobre = () => {
         </Link>
       </Footer>
     </Container>
-  )
-}
+  );
+};
