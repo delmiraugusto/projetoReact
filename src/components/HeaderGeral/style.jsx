@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 export const Header = styled.div`
   width: 100%;
   background-color: #f8f9fa;
-  border-bottom: 2px solid #d1d5db;
-  padding: 10px 0;
+  border-bottom: 1px solid #d1d5db; /* Diminui a espessura da borda */
+  padding: 8px 0; /* Menos padding */
   position: sticky;
   top: 0;
   z-index: 10;
 `;
+
 
 export const IconButton = styled.button`
   display: flex;
@@ -30,20 +31,16 @@ export const IconButton = styled.button`
   }
 `;
 
-
-// Container para as categorias com design harmonizado
 export const CategoryContainer = styled.div`
   display: flex;
   justify-content: center;
-  gap: 12px;
-  padding: 12px 0;
-  background-color: #E5E7EB; 
-  border-radius: 10px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1); 
+  gap: 10px;  /* Menos espaço entre os itens */
+  padding: 8px 0;  /* Menos padding */
+  background-color: #E5E7EB;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Menor sombra */
 `;
 
-
-// Botão de categoria
 
 export const CategoryButton = styled.button`
   padding: 8px 16px;
@@ -64,7 +61,6 @@ export const CategoryButton = styled.button`
 `;
 
 
-// Container principal com visual unificado
 export const Container = styled.div`
   padding: 30px;
   max-width: 1100px;
@@ -75,8 +71,6 @@ export const Container = styled.div`
   color: #374151;
 `;
 
-
-// Input de busca com um design suave
 export const SearchInput = styled.input`
    width: 100%;
   max-width: 600px;
@@ -94,7 +88,7 @@ export const SearchInput = styled.input`
   }
 `;
 
-// Grid de produtos com estilo ajustado
+
 export const ProductsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -102,7 +96,6 @@ export const ProductsContainer = styled.div`
   padding-top: 15px;
 `;
 
-// Estilo do Card do Produto harmonizado
 export const Card = styled.div`
   padding: 18px;
   border: 1px solid #E2E8F0; 
@@ -119,7 +112,7 @@ export const Card = styled.div`
   }
 `;
 
-// Imagem do Produto
+
 export const Image = styled.img`
   width: 100%;
   height: 160px;
@@ -129,7 +122,6 @@ export const Image = styled.img`
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
 `;
 
-// Nome do Produto com estilo simplificado
 export const Name = styled.h3`
   font-size: 1.1em;
   margin: 10px 0;
@@ -137,7 +129,6 @@ export const Name = styled.h3`
   font-weight: bold;
 `;
 
-// Preço do Produto com destaque
 export const Price = styled.p`
   font-size: 1em;
   color: #10B981; 
@@ -145,7 +136,6 @@ export const Price = styled.p`
   font-weight: bold;
 `;
 
-// Botão de Adicionar ao Carrinho com novo design
 export const AddButton = styled.button`
   padding: 10px 16px;
   background-color: #3B82F6; 
@@ -165,23 +155,26 @@ export const AddButton = styled.button`
 export const NavBar = styled.div`
   display: flex;
   justify-content: flex-end;
-  gap: 15px;
-  max-width: 1200px;
+  gap: 8px;  /* Reduzir o espaçamento entre os itens */
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 3px 0;  /* Menos padding */
 `;
+
 
 export const NavButton = styled.button`
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 12px 18px;
+  gap: 4px;  /* Reduzir o espaço entre ícones e texto */
+  padding: 8px 14px;  /* Menor padding */
   background-color: transparent;
   color: #3182ce;
   font-weight: 500;
   border: none;
-  border-radius: 8px; 
+
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1em; 
+  font-size: 0.9em;  /* Fonte menor */
   transition: color 0.3s;
 
   &:hover {
@@ -215,17 +208,19 @@ export const Nav = styled.div`
   }
 `
 export const LogoContainer = styled.div`
-   
+
   overflow-y: auto;
-  padding: 10 100px;
+  padding: 5px 50px; /* Menos padding horizontal */
+
   @media (max-width: 768px) {
     padding: 0 20px;
   }
 `;
 
 export const Logo = styled.img`
-  height: 100px;
-  width: 100px;
+  height: 80px; /* Logo menor */
+  width: 80px;
+  
   @media (max-width: 768px) {
     height: 40px;
   }
