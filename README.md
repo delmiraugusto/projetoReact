@@ -81,13 +81,13 @@ Para agregar valor ao projeto, os seguintes recursos são opcionais, mas recomen
       </a>
     </td>
     <td align="center">
-        <img src="https://github.com/ericsilva0309.png" width="125px;" alt="Eric Carvalho"/><br />
-         <p><a href="https://github.com/ericsilva0309" target="_blank">Eric Carvalho</a></p>
+        <img src="https://github.com/ericsilva0309.png" width="125px;" alt="Eric Silva"/><br />
+         <p><a href="https://github.com/ericsilva0309" target="_blank">Eric Silva</a></p>
       </a>
     </td>
     <td align="center">
-        <img src="https://github.com/lari-blip.png" width="125px;" alt="Larissa Anunciação"/><br />
-         <p><a href="https://github.com/lari-blip" target="_blank">Larissa Anunciação</p>
+        <img src="https://github.com/lari-blip.png" width="125px;" alt="Larissa Teodoro"/><br />
+         <p><a href="https://github.com/lari-blip" target="_blank">Larissa Teodoro</p>
       </a>
     </td>
     <td align="center">
