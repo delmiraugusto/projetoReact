@@ -1,4 +1,4 @@
-import { Container } from "../historicoCompras/styles"
+import { Container } from "../Sobre/style"
 import { Body, Block, Img, Title, ContentForms, Text, ImgMenor, Footer, Icon, Link} from "./style"
 import Loja1 from "../../assets/images/Loja1.jpg"
 import Loja2 from "../../assets/images/Loja2.jpg"
@@ -130,7 +130,7 @@ export const Sobre = () => {
           <Img src={Cultura}/>
         </Block>
       </ContentForms>
-
+      
       <Footer>
         <Title>Fale Conosco</Title>
         <Body>

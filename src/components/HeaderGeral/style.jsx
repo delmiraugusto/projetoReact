@@ -174,20 +174,21 @@ export const NavButton = styled.button`
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 8px 12px;
+  padding: 12px 18px;
   background-color: transparent;
   color: #3182ce;
   font-weight: 500;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px; 
   cursor: pointer;
-  font-size: 0.9em;
+  font-size: 1em; 
   transition: color 0.3s;
 
   &:hover {
     color: #0038b2;
   }
 `;
+
 
 export const StyledLink = styled(Link)`
   color: inherit;

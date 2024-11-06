@@ -103,7 +103,7 @@ export const Footer = styled.div`
   padding: 20px;
   font-size: 17px;
   cursor: pointer;
-
+  width: 100vw;
   &:hover {
     background-color: #4c4c4c;
   }
