@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { CategorySelector } from '../../components/CategorySelector';
 
-import { ProductCard } from '../../components/ProductCard';
-import { fetchProducts } from '../../servicesAPI';
-import {
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
+
   Header, 
   NavBar, 
   NavButton, 
@@ -85,7 +85,10 @@ export const Home = () => {
           <p>{error}</p>
         ) : (
           filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+            key={product.id}
+            product={product}
+            />
           ))
         )}
       </ProductsContainer>

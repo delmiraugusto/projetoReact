@@ -5,14 +5,20 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-<<<<<<< Updated upstream
     background-color: #76bffc;
     
+    @keyframes auroraAnimation {
+        0% { background-position: 100% 0%; }
+        25% { background-position: 0% 100%; }
+        50% { background-position: 100% 0%; }
+        75% { background-position: 0% 100%; }
+        100% { background-position: 100% 0%; }
+    }
 `;
 
 export const Form = styled.form`
+
     background-color: #0868d475;
-=======
     background: linear-gradient(135deg, #57bafc, #57bafc, #043d77, #9dd6fc);
     background-size: 300% 300%;
     animation: auroraAnimation 15s ease-in-out infinite;
@@ -28,36 +34,54 @@ export const Form = styled.form`
 
 export const Form = styled.form`
     background-color: rgb(255, 255, 255); 
->>>>>>> Stashed changes
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     width: 100%;
-<<<<<<< Updated upstream
     max-width: 400px;
     padding: 40px;    
 `;
 
+
 export const Title = styled.h2`
-    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    color: #00f7ff; 
     margin-bottom: 1.5rem;
-    font-size: 24px;
-    color: #fafafc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+    
+    @media screen and (max-width: 600px) {
+        font-size: 26px; 
+        margin-bottom: 1rem; 
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 30px; 
+    }
 `;
 
 export const ErrorMessage = styled.p`
-    color: red;
-    font-size: 14px;
+    color: #ff4444; 
+    font-size: 16px;
     margin-top: 10px;
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+
+   
+    @media screen and (max-width: 600px) {
+        font-size: 14px; 
+        margin-top: 8px;
+    }
 `;
 
 export const SuccessMessage = styled.p`
+
     color: green;
     font-size: 14px;
-=======
     max-width: 500px;
     text-align: center;
     backdrop-filter: blur(10px);
@@ -107,13 +131,12 @@ export const ErrorMessage = styled.p`
 export const SuccessMessage = styled.p`
     color: #00ff99;
     font-size: 16px;
->>>>>>> Stashed changes
     margin-top: 10px;
     text-align: center;
-
-<<<<<<< Updated upstream
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 `;
-=======
+
     @media screen and (max-width: 600px) {
         font-size: 14px;
         margin-top: 8px;
@@ -175,4 +198,3 @@ export const Logo = styled.div`
         }
     }
 `;
->>>>>>> Stashed changes

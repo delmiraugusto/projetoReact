@@ -175,8 +175,8 @@ export const Card = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  height: 160px;
-  object-fit: cover;
+  height: 200px;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 12px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
@@ -189,6 +189,7 @@ export const Image = styled.img`
     height: 120px;
   }
 `;
+
 
 export const Name = styled.h3`
   font-size: 1.1em;
@@ -286,4 +287,22 @@ export const Nav = styled.div`
   @media (max-width: 768px) {
     padding: 0 20px;
   }
+
 `;
+export const LogoContainer = styled.div`
+   
+  overflow-y: auto;
+  padding: 10 100px;
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+`;
+
+export const Logo = styled.img`
+  height: 100px;
+  width: 100px;
+  @media (max-width: 768px) {
+    height: 40px;
+  }
+`;
+

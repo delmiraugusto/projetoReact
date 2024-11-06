@@ -1,112 +1,157 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
     background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 `;
 
 export const MainSection = styled.div`
     display: flex;
-    gap: 40px;
-    justify-content: space-between;
-`;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
 
-export const ImageGallery = styled.div`
-    position: relative;
-    width: 50%;
-`;
-
-export const LargeImage = styled.div`
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    transition: background-size 0.3s;
-    border: 1px solid #ddd;
-
-    &:hover {
-        background-size: 150%;
+    @media(min-width: 768px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
     }
 `;
 
+export const ImageGallery = styled.div`
+    width: 100%;
+    max-width: 500px;
+`;
+
+export const LargeImage = styled.div`
+    width: 60%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    transition: transform 0.3s ease, background-position 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.3);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        background-position: 50% center;
+    }
+
+    @media(max-width: 768px) {
+        height: 300px;
+    }
+`;
 
 export const Thumbnails = styled.div`
     display: flex;
-    gap: 10px;
+    gap: 12px;
     margin-top: 15px;
+    overflow-x: auto;
 
     img {
         width: 80px;
         height: 80px;
         cursor: pointer;
-        border: 1px solid #ddd;
-        transition: border 0.3s;
+        border-radius: 8px;
+        border: 2px solid #e0e0e0;
+        transition: border-color 0.3s, transform 0.3s;
 
         &:hover {
-            border-color: #FFA41C;
+            border-color: #3a8dff;
+            transform: scale(1.05);
         }
     }
 `;
 
 export const ProductInfo = styled.div`
-    width: 50%;
+    flex: 1;
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
 
     h1 {
         font-size: 28px;
-        color: #0F1111;
-        margin-bottom: 10px;
+        color: #1e4a7f;
+        margin-bottom: 15px;
+        font-weight: 600;
     }
 
     p {
         font-size: 16px;
-        margin: 5px 0;
+        margin: 8px 0;
+        color: #555;
     }
 
     .price {
         font-size: 20px;
-        color: #FFA41C;
-        font-weight: bold;
+        color: #e01c1c;
+        font-weight: 700;
+        margin-bottom: -3px;
+    }
+
+    .rating {
+        font-size: 14px;
+        color: #888;
+    }
+
+    .discount-price {
+        font-size: 12px;
+        color: #888;
+        text-decoration: line-through;
         margin-bottom: 15px;
     }
 `;
 
 export const AddToCartButton = styled.button`
-    background-color: #FFA41C;
+    background-color: #3a8dff;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
-    padding: 12px 20px;
+    padding: 12px 18px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     margin-top: 20px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 
     &:hover {
-        background-color: #F08804;
+        background-color: #1e4a7f;
+        transform: scale(1.05);
     }
 `;
 
 export const QuantityInput = styled.input`
-    width: 60px;
-    padding: 8px;
+    width: 80px;
+    padding: 10px;
     margin-top: 10px;
     font-size: 16px;
     text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-right: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    margin-right: 15px;
+    transition: border-color 0.3s;
+
+    &:focus {
+        border-color: #3a8dff;
+        outline: none;
+    }
 `;
 
 export const Divider = styled.div`
     width: 100%;
-    height: 2px;
-    background-color: #eee;
-    margin: 40px 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 30px 0;
 `;
 
 export const RecommendedProducts = styled.div`
@@ -114,57 +159,52 @@ export const RecommendedProducts = styled.div`
 
     h3 {
         font-size: 22px;
-        color: #111;
-        margin-bottom: 20px;
+        color: #1e4a7f;
+        margin-bottom: 15px;
+        font-weight: 600;
     }
 
     .products-list {
         display: flex;
         gap: 20px;
-        justify-content: space-between;
+        overflow-x: auto;
 
-        div {
+        .product-item {
             background-color: #f7f7f7;
-            padding: 15px;
-            width: 200px;
+            padding: 18px;
+            width: 180px;
             text-align: center;
             cursor: pointer;
-            border: 1px solid #ddd;
-            transition: border 0.3s;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
 
             &:hover {
-                border-color: #FFA41C;
+                transform: translateY(-5px);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            img {
+                width: 80%;
+                height: 140px;
+                object-fit: contain;
+                border-radius: 6px;
+            }
+
+            p {
+                margin-top: 12px;
+                font-size: 14px;
+                color: #333;
+            }
+
+            .price {
+                font-size: 16px;
+                color: #3a8dff;
+                font-weight: bold;
             }
         }
     }
 `;
 
-export const BestSellers = styled.div`
+export const BestSellers = styled(RecommendedProducts)`
     margin-top: 40px;
-
-    h3 {
-        font-size: 22px;
-        color: #111;
-        margin-bottom: 20px;
-    }
-
-    .products-list {
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
-
-        div {
-            background-color: #f7f7f7;
-            padding: 15px;
-            width: 200px;
-            text-align: center;
-            cursor: pointer;
-            border: 1px solid #ddd;
-            transition: border 0.3s;
-
-            &:hover {
-                border-color: #FFA41C;
-            }
-        }
-    }
 `;

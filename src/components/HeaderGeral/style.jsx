@@ -31,7 +31,6 @@ export const IconButton = styled.button`
   }
 `;
 
-
 export const CategoryContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -41,6 +40,7 @@ export const CategoryContainer = styled.div`
   border-radius: 8px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Menor sombra */
 `;
+
 
 export const CategoryButton = styled.button`
   padding: 8px 16px;
@@ -71,7 +71,6 @@ export const Container = styled.div`
   color: #374151;
 `;
 
-
 export const SearchInput = styled.input`
    width: 100%;
   max-width: 600px;
@@ -88,6 +87,7 @@ export const SearchInput = styled.input`
     outline: none;
   }
 `;
+
 
 export const ProductsContainer = styled.div`
   display: grid;
@@ -111,6 +111,7 @@ export const Card = styled.div`
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   }
 `;
+
 
 export const Image = styled.img`
   width: 100%;
@@ -170,6 +171,7 @@ export const NavButton = styled.button`
   color: #3182ce;
   font-weight: 500;
   border: none;
+
   border-radius: 8px;
   cursor: pointer;
   font-size: 0.9em;  /* Fonte menor */
@@ -206,15 +208,19 @@ export const Nav = styled.div`
   }
 `
 export const LogoContainer = styled.div`
+
   overflow-y: auto;
   padding: 5px 50px; /* Menos padding horizontal */
+
   @media (max-width: 768px) {
     padding: 0 20px;
   }
 `;
+
 export const Logo = styled.img`
   height: 80px; /* Logo menor */
   width: 80px;
+  
   @media (max-width: 768px) {
     height: 40px;
   }
