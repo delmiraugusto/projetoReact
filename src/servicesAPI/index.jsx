@@ -17,6 +17,16 @@ export const fetchUsers = async () => {
     }
 };
 
+export const deleteUser = async (id) => {
+    try {
+        await axios.delete(`${baseURl}${usersEndpoint}/${id}`);
+        console.log("Usuário deletado com sucesso");
+    } catch (error) {
+        console.error('Erro ao deletar usuário:', error);
+        throw error;
+    }
+};
+
 export const fetchProducts = async () => {
 
     try {

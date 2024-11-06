@@ -3,9 +3,9 @@ import styled from 'styled-components';
 // Card do Produto
 export const Card = styled.div`
   padding: 30px;
-  border: 1px solid #CBD5E0; 
-  background-color: #FFFFFF; 
-  color: #2D3748; 
+  border: 1px solid #CBD5E0;
+  background-color: #FFFFFF;
+  color: #2D3748;
   border-radius: 12px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
   text-align: center;
@@ -13,12 +13,11 @@ export const Card = styled.div`
 
   &:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15); 
-    background-color: #EDF2F7; 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+    background-color: #EDF2F7;
   }
 `;
 
-// Imagem do Produto
 export const Image = styled.img`
   width: 100%;
   height: 180px; 
@@ -28,7 +27,7 @@ export const Image = styled.img`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 `;
 
-// Nome do Produto
+
 export const Name = styled.h3`
   font-size: 1.25em; 
   color: #1A202C; 
@@ -41,7 +40,7 @@ export const Name = styled.h3`
   }
 `;
 
-// Preço do Produto
+
 export const Price = styled.p`
   font-size: 1.1em;
   font-weight: 600;
@@ -49,7 +48,6 @@ export const Price = styled.p`
   margin-bottom: 20px;
 `;
 
-// Botão de Adicionar ao Carrinho
 export const AddButton = styled.button`
   padding: 12px 24px;
   background-color: #3182CE; 
@@ -72,4 +70,4 @@ export const AddButton = styled.button`
     border-color: #2B6CB0; 
   }
 `;
-  
+
