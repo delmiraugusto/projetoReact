@@ -101,6 +101,6 @@ export const Footer = styled.div`
   color: #e1d5d5;
   padding: 20px;
   font-size: 17.1px;
-  width: 189.6vh;
+  width: 100vw;
   cursor: pointer;
 `
