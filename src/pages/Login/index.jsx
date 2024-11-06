@@ -1,15 +1,16 @@
 import { useState } from 'react';
-import { Container, Form, Title, Paragraf } from './style';
-import { InputStyle } from "../../components/InputField/style"
+import { Container, Form, Title, Paragraf, Logo } from './style';
+import { InputStyle } from "../../components/InputField/style";
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { ButtonComponents } from '../../components/Button/style';
+
+const Imagem = new URL("../../assets/images/logo2.png", import.meta.url);
 
 export const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -24,6 +25,11 @@ export const Login = () => {
             return;
         }
 
+<<<<<<< Updated upstream
+=======
+        const url = import.meta.env.VITE_URL_API_V1;
+
+>>>>>>> Stashed changes
         try {
             const response = await axios.get('https://672a5446976a834dd0230049.mockapi.io/users');
           
@@ -43,10 +49,14 @@ export const Login = () => {
         }
     };
 
-
     return (
         <Container>
+            <Logo>
+            <img src={Imagem} alt="Logo" />
+            </Logo>
+
             <Form onSubmit={handleLogin}>
+               
                 <Title>Login</Title>
                 <InputStyle
                     type="text"
@@ -70,4 +80,4 @@ export const Login = () => {
             </Form>
         </Container>
     );
-}
+};

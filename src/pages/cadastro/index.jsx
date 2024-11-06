@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Container, ErrorMessage, Form, SuccessMessage, Title } from './style'
+import { Container, ErrorMessage, Form, SuccessMessage, Title, Logo } from './style'
 import { ButtonComponents } from '../../components/Button/style';
 import { InputStyle } from "../../components/InputField/style"
+
+const Imagem = new URL("../../assets/images/cadastro.png", import.meta.url);
+
 
 export const Cadastro = () => {
     const [formData, setFormData] = useState({ email: '', password: '' });
@@ -35,6 +38,11 @@ export const Cadastro = () => {
 
     return (
         <Container>
+
+            <Logo>
+            <img src={Imagem} alt="Logo" />
+            </Logo>
+
             <Form onSubmit={handleSubmit}>
                 <Title>Cadastro de Usuário</Title>
                 <InputStyle
