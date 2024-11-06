@@ -56,6 +56,7 @@ Para agregar valor ao projeto, os seguintes recursos são opcionais, mas recomen
   VITE_URL_USERS="/users"
   VITE_URL_PRODUCTS="/products"
   VITE_KEY="672930946d5fa4901b6c6e97"
+  VITE_URL_API_V1="https://672a5446976a834dd0230049.mockapi.io/users"
 - **Inicie o servidor de desenvolvedor:**
   ```bash
   npm run dev
