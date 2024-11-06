@@ -24,17 +24,18 @@ export const Login = () => {
             return;
         }
 
+        const url = import.meta.env.VITE_URL_API_V1
+
         try {
-            const response = await axios.get('https://672a5446976a834dd0230049.mockapi.io/users');
-          
+            const response = await axios.get(url);
+
             const user = response.data.find((user) => user.email === email && user.password === password);
 
             if (user) {
                 alert("Login Realizado com Sucesso");
                 navigate('/home');
-
             } else {
-                alert('Dados inválidos');
+                alert('Dados inválidos2121');
             }
         } catch (error) {
             if (error.response && error.response.status === 401) {

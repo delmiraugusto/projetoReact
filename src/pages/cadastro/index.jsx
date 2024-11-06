@@ -5,25 +5,30 @@ import { ButtonComponents } from '../../components/Button/style';
 import { InputStyle } from "../../components/InputField/style"
 
 export const Cadastro = () => {
-    const [formData, setFormData] = useState({ email: '', password: '' });
+    const [formData, setFormData] = useState({ name: "", email: '', password: '' });
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
 
     const handleSubmit = async (e) => {
+
+        const url = import.meta.env.VITE_URL_USERS
+        const key = import.meta.env.VITE_KEY
+        const baseURl = `https://${key}.mockapi.io`;
         e.preventDefault();
         setError(null);
         setSuccess(null);
 
-        if (!formData.email || !formData.password) {
+        if (!formData.name || !formData.email || !formData.password) {
             setError("Todos os campos são obrigatórios!");
             return;
         }
-
+        console.log(baseURl + url)
         try {
-            const response = await axios.post(`${import.meta.env.VITE_URL_USERS}/users`, formData);
+            const response = await axios.post(baseURl + url, formData);
             setSuccess("Cadastro realizado com sucesso!");
-            setFormData({ email: '', password: '' });
+            setFormData({ name: "", email: '', password: '' });
         } catch (error) {
+            console.error(error.response ? error.response.data : error.message);
             setError("Erro ao cadastrar usuário. Tente novamente.");
         }
     };
