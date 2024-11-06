@@ -30,7 +30,6 @@ export const Title = styled.h1`
   display: flex;
   padding: 20px;
   font-size: 50px;
-  font-size: 50px;
 `
 
 export const Img = styled.img`
