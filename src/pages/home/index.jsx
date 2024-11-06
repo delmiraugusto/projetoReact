@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import { CategorySelector } from '../../components/CategorySelector';
 
 import { ProductCard } from '../../components/ProductCard';
@@ -79,7 +80,10 @@ export const Home = () => {
           <p>{error}</p>
         ) : (
           filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+            key={product.id}
+            product={product}
+            />
           ))
         )}
       </ProductsContainer>
