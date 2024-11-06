@@ -30,6 +30,7 @@ export const Title = styled.h1`
   display: flex;
   padding: 20px;
   font-size: 50px;
+  font-size: 50px;
 `
 
 export const Img = styled.img`
@@ -96,6 +97,8 @@ export const Footer = styled.div`
   background-color: #6c5f5f;
   color: #e1d5d5;
   padding: 20px;
+  font-size: 17.1px;
+  width: 189.6vh;
   font-size: 17.1px;
   width: 189.6vh;
   cursor: pointer;
