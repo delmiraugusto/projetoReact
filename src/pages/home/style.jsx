@@ -94,7 +94,6 @@ export const SearchInput = styled.input`
   }
 `;
 
-// Grid de produtos com estilo ajustado
 export const ProductsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -102,7 +101,6 @@ export const ProductsContainer = styled.div`
   padding-top: 15px;
 `;
 
-// Estilo do Card do Produto harmonizado
 export const Card = styled.div`
   padding: 18px;
   border: 1px solid #E2E8F0; 
@@ -119,17 +117,18 @@ export const Card = styled.div`
   }
 `;
 
-// Imagem do Produto
+
 export const Image = styled.img`
   width: 100%;
-  height: 160px;
-  object-fit: cover;
+  height: 200px;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 12px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
 `;
 
-// Nome do Produto com estilo simplificado
+
+
 export const Name = styled.h3`
   font-size: 1.1em;
   margin: 10px 0;

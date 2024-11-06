@@ -9,7 +9,9 @@ import {
   SearchContainer,
   Container,
   ProductsContainer,
-  SearchInput
+  SearchInput,
+  StyledLink,
+  Image
 } from './style';
 export const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todos');

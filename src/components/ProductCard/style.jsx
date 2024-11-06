@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 // Card do Produto
 export const Card = styled.div`
-  padding: 25px;
+  padding: 30px;
   border: 1px solid #CBD5E0; 
   background-color: #FFFFFF; 
   color: #2D3748; 
@@ -22,7 +22,7 @@ export const Card = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 180px; 
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
