@@ -1,18 +1,18 @@
-import { Body, Block, Img, Title, ContentForms, Text, ImgMenor, Footer, Icon, Link, Container} from "./style"
+import { Body, Block, Img, Title, ContentForms, Text, ImgMenor, Footer, Icon, Link, Container} from "./style";
 import React from 'react';
-import Loja1 from "../../assets/images/Loja1.jpg"
-import Loja2 from "../../assets/images/Loja2.jpg"
-import Loja3 from "../../assets/images/Loja3.jpg"
-import Loja4 from "../../assets/images/Loja4.jpg"
-import Loja5 from "../../assets/images/Loja5.jpg"
-import Loja6 from "../../assets/images/Loja6.jpg"
-import Pessoas from "../../assets/images/Pessoas.jpg"
-import Cultura from "../../assets/images/Cultura.png"
-import Facebook from "../../assets/icons/facebook.png"
-import Instagram from "../../assets/icons/instagram.png"
-import Linkedin from "../../assets/icons/linkedin.png"
-import Github from "../../assets/icons/github.png"
-import Youtube from "../../assets/icons/youtube.png"
+import Loja1 from "../../assets/images/Loja1.jpg";
+import Loja2 from "../../assets/images/Loja2.jpg";
+import Loja3 from "../../assets/images/Loja3.jpg";
+import Loja4 from "../../assets/images/Loja4.jpg";
+import Loja5 from "../../assets/images/Loja5.jpg";
+import Loja6 from "../../assets/images/Loja6.jpg";
+import Pessoas from "../../assets/images/Pessoas.jpg";
+import Cultura from "../../assets/images/Cultura.png";
+import Facebook from "../../assets/icons/facebook.png";
+import Instagram from "../../assets/icons/instagram.png";
+import Linkedin from "../../assets/icons/linkedin.png";
+import Github from "../../assets/icons/github.png";
+import Youtube from "../../assets/icons/youtube.png";
 
 export const Sobre = () => {
   return(
@@ -40,13 +40,6 @@ export const Sobre = () => {
               curar e preservar peças com personalidade e histórias marcantes, 
               dando a nossos clientes a oportunidade de trazer um toque de 
               nostalgia e elegância para seus espaços.
-
-              Começamos com uma pequena seleção de objetos decorativos e 
-              curiosidades para amigos e familiares, sempre em busca de peças 
-              excêntricas e autênticas que adicionassem charme a qualquer 
-              coleção ou ambiente. Com o passar dos anos, nossa coleção cresceu, 
-              transformando-se em um destino especial para entusiastas e 
-              colecionadores.
             </Body>
           </Text>
           <Img src={Loja2}/>
@@ -68,10 +61,10 @@ export const Sobre = () => {
           <Text>
             <Title>Nossos Valores</Title>
             <Body>
-              <strong>Paixão pelo Vintage:</strong> Cada peça possui um passado único, e nos orgulhamos de preservá-lo.<br />
-              <strong>Comprometimento:</strong> Nosso atendimento é personalizado, e estamos sempre prontos para ajudar a encontrar o item perfeito.<br />
-              <strong>Autenticidade:</strong> Garantimos a originalidade e a qualidade de cada peça em nossa coleção.<br />
-              <strong>Conservação:</strong> Valorizamos a preservação de objetos históricos, promovendo a durabilidade e o respeito ao design clássico.
+              <span><strong>Paixão pelo Vintage:</strong> Cada peça possui um passado único, e nos orgulhamos de preservá-lo.<br /></span>
+              <span><strong>Comprometimento:</strong> Nosso atendimento é personalizado, e estamos sempre prontos para ajudar a encontrar o item perfeito.<br /></span>
+              <span><strong>Autenticidade:</strong> Garantimos a originalidade e a qualidade de cada peça em nossa coleção.<br /></span>
+              <span><strong>Conservação:</strong> Valorizamos a preservação de objetos históricos, promovendo a durabilidade e o respeito ao design clássico.</span>
             </Body>
           </Text>
           <Img src={Loja4}/>
@@ -164,5 +157,5 @@ export const Sobre = () => {
         </Link>
       </Footer>
     </Container>
-  )
-}
+  );
+};

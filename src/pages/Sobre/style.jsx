@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-export const Container =styled.div`
+export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@ export const Container =styled.div`
 `
 
 export const ContentForms = styled.div`
-  background-color: #f5d394;
+  background-color: #189edd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@ export const Icon = styled.img`
 `
 
 export const Block = styled.div`
-  background-color: #F5F5DC;
+  background-color: #f5f3f3;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -74,9 +74,9 @@ export const Block = styled.div`
   margin: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  
+
   &:hover {
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
   }
 `
 
@@ -84,11 +84,15 @@ export const Text = styled.text`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  display: flex;  
+  display: flex;
   font-size: 18px;
   padding: 10px;
   color: #000000;
   transition: color 0.3s ease;
+
+  &:hover {
+    color: #23bdbd;
+  }
 `
 
 export const Footer = styled.div`
@@ -98,11 +102,5 @@ export const Footer = styled.div`
   padding: 20px;
   font-size: 17.1px;
   width: 189.6vh;
-  font-size: 17.1px;
-  width: 189.6vh;
   cursor: pointer;
-
-  &:hover {
-    background-color: #4c4c4c;
-  }
 `
