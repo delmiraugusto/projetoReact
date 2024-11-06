@@ -18,7 +18,6 @@ export const Card = styled.div`
   }
 `;
 
-// Imagem do Produto
 export const Image = styled.img`
   width: 100%;
   height: 180px; 
@@ -28,7 +27,6 @@ export const Image = styled.img`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 `;
 
-// Nome do Produto
 export const Name = styled.h3`
   font-size: 1.25em; 
   color: #1A202C; 
@@ -41,7 +39,6 @@ export const Name = styled.h3`
   }
 `;
 
-// Preço do Produto
 export const Price = styled.p`
   font-size: 1.1em;
   font-weight: 600;
@@ -49,7 +46,6 @@ export const Price = styled.p`
   margin-bottom: 20px;
 `;
 
-// Botão de Adicionar ao Carrinho
 export const AddButton = styled.button`
   padding: 12px 24px;
   background-color: #3182CE; 
