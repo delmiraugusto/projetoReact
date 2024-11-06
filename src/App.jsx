@@ -9,13 +9,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/home';
 import { Cart } from './pages/Cart';
 import { NotFound } from "./pages/NotFound";
+import { HeaderGeral} from "./components/HeaderGeral";
 
 export const App = () => {
   return (
     <CartProvider>
       <BrowserRouter>
+       <HeaderGeral/>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />

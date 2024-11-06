@@ -94,6 +94,7 @@ export const SearchInput = styled.input`
   }
 `;
 
+// Grid de produtos com estilo ajustado
 export const ProductsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -101,6 +102,7 @@ export const ProductsContainer = styled.div`
   padding-top: 15px;
 `;
 
+// Estilo do Card do Produto harmonizado
 export const Card = styled.div`
   padding: 18px;
   border: 1px solid #E2E8F0; 
@@ -117,18 +119,17 @@ export const Card = styled.div`
   }
 `;
 
-
+// Imagem do Produto
 export const Image = styled.img`
   width: 100%;
-  height: 200px;
-  object-fit: contain;
+  height: 160px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 12px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
 `;
 
-
-
+// Nome do Produto com estilo simplificado
 export const Name = styled.h3`
   font-size: 1.1em;
   margin: 10px 0;
@@ -173,20 +174,21 @@ export const NavButton = styled.button`
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 8px 12px;
+  padding: 12px 18px;
   background-color: transparent;
   color: #3182ce;
   font-weight: 500;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px; 
   cursor: pointer;
-  font-size: 0.9em;
+  font-size: 1em; 
   transition: color 0.3s;
 
   &:hover {
     color: #0038b2;
   }
 `;
+
 
 export const StyledLink = styled(Link)`
   color: inherit;

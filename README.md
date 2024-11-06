@@ -66,33 +66,33 @@ Para agregar valor ao projeto, os seguintes recursos são opcionais, mas recomen
 <table>
   <tr>
     <td align="center">
-        <img src="https://github.com/carladanieleferreira.png?size=100" width="100px;" alt="Carla Daniele"/><br />
-        <sub><b>Carla Daniele</b></sub>
+        <img src="https://github.com/carladanieleferreira.png" width="125px;" alt="Carla Daniele"/><br />
+         <p><a href="https://github.com/carladanieleferreira" target="_blank">Carla Daniele</a></p>
       </a>
     </td>
     <td align="center">
-        <img src="https://github.com/myllez2110.png?size=100" width="100px;" alt="Daniel Rufino"/><br />
-        <sub><b>Daniel Rufino</b></sub>
+        <img src="https://github.com/myllez2110.png" width="125px;" alt="Daniel Rufino"/><br />
+         <p><a href="https://github.com/myllez2110" target="_blank">Daniel Rufino</a></p>
       </a>
     </td>
     <td align="center">
-        <img src="https://github.com/delmiraugusto.png?size=100" width="100px;" alt="Delmir Augusto"/><br />
-        <sub><b>Delmir Augusto</b></sub>
+        <a><img src="https://github.com/delmiraugusto.png" width="125px;" alt="Delmir Augusto"/><a><br />
+         <p><a href="https://github.com/delmiraugusto" target="_blank">Delmir Augusto</a></p>
       </a>
     </td>
     <td align="center">
-        <img src="https://github.com/ericsilva0309.png?size=100" width="100px;" alt="Eric Carvalho"/><br />
-        <sub><b>Eric Carvalho</b></sub>
+        <img src="https://github.com/ericsilva0309.png" width="125px;" alt="Eric Silva"/><br />
+         <p><a href="https://github.com/ericsilva0309" target="_blank">Eric Silva</a></p>
       </a>
     </td>
     <td align="center">
-        <img src="https://github.com/lari-blip.png?size=100" width="100px;" alt="Larissa Anunciação"/><br />
-        <sub><b>Larissa Anunciação</b></sub>
+        <img src="https://github.com/lari-blip.png" width="125px;" alt="Larissa Teodoro"/><br />
+         <p><a href="https://github.com/lari-blip" target="_blank">Larissa Teodoro</p>
       </a>
     </td>
     <td align="center">
-        <img src="https://github.com/ryansouza9.png?size=100" width="100px;" alt="Ryan Souza"/><br />
-        <sub><b>Ryan Souza</b></sub>
+        <img src="https://github.com/ryansouza9.png" width="125px;" alt="Ryan Souza"/><br />
+         <p><a href="https://github.com/ryansouza9" target="_blank">Ryan Souza</a></p>
       </a>
     </td>
   </tr>
