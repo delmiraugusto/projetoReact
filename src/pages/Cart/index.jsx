@@ -19,6 +19,10 @@ import {
 export const Cart = () => {
     const { cart, addToCart, removeFromCart } = useContext(CartContext);
 
+    const compra = () => {
+        alert("Compra Finalizada com Sucesso")
+    }
+
     const handleDecreaseQuantity = (product) => {
         removeFromCart(product);
     };
@@ -51,7 +55,7 @@ export const Cart = () => {
             </ProductList>
             <TotalContainer>
                 <Total>Total: R$ {totalPrice.toFixed(2)}</Total>
-                <CheckoutButton>Finalizar Compra</CheckoutButton>
+                <CheckoutButton onClick={compra}>Finalizar Compra</CheckoutButton>
             </TotalContainer>
         </Container>
     );

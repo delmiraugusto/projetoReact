@@ -5,7 +5,7 @@ export const Header = styled.div`
   width: 100%;
   background-color: #f8f9fa;
   border-bottom: 2px solid #d1d5db;
-  padding: 10px 0;
+  padding: -40px;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -63,7 +63,6 @@ export const CategoryButton = styled.button`
   }
 `;
 
-
 // Container principal com visual unificado
 export const Container = styled.div`
   padding: 30px;
@@ -74,7 +73,6 @@ export const Container = styled.div`
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
   color: #374151;
 `;
-
 
 // Input de busca com um design suave
 export const SearchInput = styled.input`
@@ -125,7 +123,7 @@ export const Image = styled.img`
   height: 160px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
 `;
 
@@ -168,6 +166,7 @@ export const NavBar = styled.div`
   gap: 15px;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: -10px;
 `;
 
 export const NavButton = styled.button`
@@ -188,7 +187,6 @@ export const NavButton = styled.button`
     color: #0038b2;
   }
 `;
-
 
 export const StyledLink = styled(Link)`
   color: inherit;
@@ -214,10 +212,11 @@ export const Nav = styled.div`
     padding: 0 20px;
   }
 `
-export const LogoContainer = styled.div`
-   
+export const LogoContainer = styled.button`
   overflow-y: auto;
-  padding: 10 100px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
   @media (max-width: 768px) {
     padding: 0 20px;
   }

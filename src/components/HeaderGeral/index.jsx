@@ -3,12 +3,14 @@ import {
 } from "./style"
 import { FaUserCircle, FaRegNewspaper, FaCartPlus, FaHistory, FaInfoCircle } from 'react-icons/fa';
 import logo from '../../assets/images/logo.png'
+
 export const HeaderGeral = () => {
     return (
         <Header>
-
             <LogoContainer>
-                <Logo src={logo} alt="Logo" />
+                <StyledLink to="/home">
+                    <Logo src={logo} alt="Logo" />
+                </StyledLink>
             </LogoContainer>
             <NavBar>
                 <NavButton><FaUserCircle /> <StyledLink to="/login">Login</StyledLink></NavButton>
