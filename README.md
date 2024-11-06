@@ -8,7 +8,6 @@ Desenvolver um site de e-commerce utilizando os conceitos de ReactJS e Styled Co
 - **Tela de Login:** Interface para autenticação do usuário, com campos obrigatórios de e-mail e senha e botão para login.
 - **Tela Home:** Exibição dos produtos disponíveis para compra.
 - **Tela de Cadastro de Usuário:** Formulário para criar uma nova conta de usuário.
-- **Tela de Gerenciamento de Usuário:** Permite editar ou excluir informações de um usuário existente.
 - **Página Institucional:** Descrição do conceito e origem do site, abordando a motivação para criação do e-commerce.
 - **Tela de Histórico de Compras:** Exibe os itens adquiridos pelo usuário, consultando dados via API.
 
