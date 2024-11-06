@@ -13,7 +13,8 @@ import {
   Container,
   ProductsContainer,
   SearchInput,
-  StyledLink
+  StyledLink,
+  Image
 } from './style';
 import { FaUserCircle, FaRegNewspaper, FaCartPlus, FaHistory, FaInfoCircle } from 'react-icons/fa';
 
