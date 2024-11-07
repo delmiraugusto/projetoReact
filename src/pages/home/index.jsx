@@ -54,23 +54,33 @@ export const Home = () => {
           placeholder="Buscar produtos..."
           value={searchTerm}
           onChange={handleSearchChange}
+          aria-labels="Buscar produtos"
         />
       </SearchContainer>
       <CategorySelector onCategoryChange={handleCategoryChange} />
-      <ProductsContainer>
+      <section aria-live="polite">
+        <h2>Produtos</h2>
         {loading ? (
-          <p>Carregando produtos...</p>
+          <p aria-live='assertive'>Carregando Produtos...</p>
         ) : error ? (
           <p>{error}</p>
         ) : (
-          filteredProducts.map((product) => (
-            <ProductCard
-            key={product.id}
-            product={product}
-            />
-          ))
+          <ProductsContainer>
+            {loading ? (
+              <p>Carregando produtos...</p>
+            ) : error ? (
+              <p>{error}</p>
+            ) : (
+              filteredProducts.map((product) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                />
+              ))
+            )}
+          </ProductsContainer>
         )}
-      </ProductsContainer>
+      </section>
     </Container>
   );
 };
